@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
   autofocus
   type="text"
   class="form-control-lg ip"
-  placeholder="Search........"
+  placeholder="Search..."
   (keyup)="onSearch(inputSearch.value)"/>
   `,
 })
