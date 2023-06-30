@@ -87,4 +87,32 @@ body {
     font-weight: bold;
   }
 
-  
+  @media (max-width: 767px) {
+    .top{
+      display: flex;
+      justify-content: center;
+      flex-wrap: inherit;
+    }
+
+    .mobile{
+      display: flex;
+      justify-content: center;
+      margin-top: 120px;
+    }
+
+    .list{
+      width: 100px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .top{
+      display: flex;
+      flex-wrap: inherit;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      padding-left: 1%;
+      padding-right: 1%;
+    }
+  }
