@@ -1,0 +1,15 @@
+<div class="row row-cols-sm-2 row-cols-md-3 row-cols-lg-4 d-flex justify-content-center" infinite-scroll (scrolled)="onScrollDown()">
+    <div class="mt-2" *ngFor="let character of characters">    
+        <app-character [character]="character" class="d-flex justify-content-center"></app-character>
+    </div>
+    <div class="d-flex justify-content-center text-center mt-5" *ngIf="characters.length <=0">
+        <h2 class="text-white text-stroked">No results...</h2>
+    </div>
+</div>
+<button
+[ngClass]="'no-hidden'"
+(click)="onScrollTop()"
+*ngIf="showGoUpButton"
+class="btn btn-dark sizeButtonUp">
+    Go UP
+</button>

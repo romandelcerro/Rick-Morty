@@ -1,0 +1,14 @@
+<div class="row justify-content-center mt-3" *ngIf="character$ | async as character">
+    <div class="col-xs-12 col-sm-6 col-md-6 d-flex justify-content-center mt-5">
+       <app-character [character]= "character"></app-character>
+    </div>  
+</div>
+<div class="conainer d-flex justify-content-center">
+    <button
+    (click)="onGoBack()"
+    class="btn btn-dark btn-lg mt-5" style="width: 20%;">
+        Back
+    </button>
+</div>
+
+
